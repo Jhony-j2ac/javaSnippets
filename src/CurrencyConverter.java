@@ -5,11 +5,11 @@ public class CurrencyConverter {
      * @param args Args from main function
      */
     public static void main(String[] args) {
-        double usd = 0;
+        double usd;
 
         Scanner scn = new Scanner(System.in);
 
-        usd = converToDolar(Integer.valueOf(scn.nextLine()), "MXN");
+        usd = converToDolar(Integer.parseInt(scn.nextLine()), "MXN");
         System.out.println("Pesos MXN a USD: $" + usd);
 
         usd = converToDolar(20000, "ARS");
